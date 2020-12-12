@@ -1,0 +1,19 @@
+@media print {
+  @page {
+    size: A4;
+    size: portrait;
+    margin: 2cm;
+    background-image: url(https://theeyeopener.com/wp-content/uploads/2019/03/DD-parchment.jpg);
+  }
+  #write {
+    background-image: none !important;
+  }
+  body {
+    column-count: 2;
+    column-gap: 0.5cm;
+    column-width: 8cm;
+  }
+}
+html {
+  background-image: url(https://i.pinimg.com/originals/1e/f4/86/1ef486a24dd55567a11479379f02a2f3.jpg);
+}
