@@ -5,6 +5,15 @@
 /** Nova Mono **/
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
 
+/* Try to import from GitHub */
+@import "https://teparsons.github.io/torillic/typora/torillic/torillic-typography.css";
+@import "https://teparsons.github.io/torillic/typora/torillic/torillic-elements.css";
+@import "https://teparsons.github.io/torillic/typora/torillic/torillic-code.css";
+@import "https://teparsons.github.io/torillic/typora/torillic/torillic-write.css";
+@import "https://teparsons.github.io/torillic/typora/torillic/torillic-focus.css";
+@import "https://teparsons.github.io/torillic/typora/torillic/torillic-interface.css";
+
+/* Try locally, in case of connection fail */
 @import "torillic/torillic-typography.css";
 @import "torillic/torillic-elements.css";
 @import "torillic/torillic-code.css";
