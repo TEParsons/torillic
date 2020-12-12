@@ -50,4 +50,5 @@ content {
     font-family: Nova Mono, sans-serif;
     background-color: var(--green);
     border-left: 5px solid var(--red);
+    padding-left: 10px;
 }
