@@ -1,0 +1,3 @@
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+	color: var(--grey);
+}

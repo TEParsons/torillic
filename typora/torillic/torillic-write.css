@@ -1,0 +1,53 @@
+#write {
+    position: relative;
+    box-sizing: border-box;
+
+    zoom: 110%;
+    background-image: url(https://theeyeopener.com/wp-content/uploads/2019/03/DD-parchment.jpg);
+    padding: 2cm;
+    padding-bottom: 4cm;
+}
+@media screen and (min-width: 25cm) {
+    #write {
+        /* Make it a page */
+        width: 21cm;
+        min-height: 29.7cm;
+        margin: 1cm auto;
+        box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5);
+        /* Add columns */
+        column-count: 2;
+        column-gap: 0.5cm;
+        column-width: 8cm;
+        /* Alignment */
+        text-align: left;
+    }
+}
+
+
+content {
+    overflow-y: scroll;
+    background-image: url(https://i.pinimg.com/originals/1e/f4/86/1ef486a24dd55567a11479379f02a2f3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#write * {
+    column-span: none;
+    break-inside: avoid-column;
+}
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre {
+    width: 100%;
+}
+
+#write h1, #write hr {
+    column-span: all;
+}
+
+#write .CodeMirror {
+    break-before: avoid;
+}
+
+#write .md-meta-block {
+    font-family: Nova Mono, sans-serif;
+    background-color: var(--green);
+    border-left: 5px solid var(--red);
+}

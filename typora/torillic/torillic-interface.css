@@ -1,0 +1,66 @@
+/** Scrollbar **/
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
+}
+#md-notification {
+  background: var(--green);
+}
+.md-image>.md-meta {
+  color: var(--red);
+}
+
+
+/** Modal **/
+.popover {
+	background-color: var(--green);
+	color: var(--black);
+}
+.modal-content {
+	background-color: var(--offwhite);
+	padding: 1rem;
+	border: none;
+	border-left: 10px solid var(--red);
+}
+#md-searchpanel input, input {
+	background-color: var(--green);	
+	border: none;
+	padding: 5px 10px;
+}
+.dropdown-menu, .context-menu {
+	background-color: var(--green);
+	border-left: 10px solid var(--red);
+}
+.dropdown-menu .active, .context-menu .active {
+	background-color: var(--red);
+	color: var(--offwhite);
+}
+.menu-style-btn.active, .context-menu.dropdown-menu > .active > a {
+	background-color: rgba(0,0,0,0);
+}
+.context-menu.dropdown-menu > li > a:hover {
+	background-color: rgba(0,0,0,0);
+	color: var(--red);
+}
+.btn, .btn-danger, .searchpanel-search-option-btn {
+	background-color: var(--green);
+	border: none;
+	margin: 0.5rem;
+}
+.input-group-addon {
+	background-color: var(--offwhite);
+}
+#md-resize-grid {
+	color: var(--offwhite);
+	background-color: var(--red);
+	border: none;
+}
+
+
+/** Other **/
+#md-notification {
+	background-color: var(--offwhite);
+	border: none;
+}

@@ -1,0 +1,35 @@
+/** Blocks **/
+blockquote {
+  break-inside: avoid;
+  margin: 5mm 0;
+  padding: 4mm;
+  
+  background-color: var(--green);
+  border-top: 5px solid var(--red);
+  border-bottom: 5px solid var(--red);
+}
+blockquote > h4, blockquote > h3 {
+  margin-block-start: 0.2em;
+}
+
+/** Tables **/
+figure {
+  margin: 0;
+  width: 100%;
+}
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0;
+    width: 100%;
+}
+th {
+  color: white;
+  background-color: var(--red);
+  padding: 0.2rem 0.5rem;
+}
+td {
+  border: none;
+  background: var(--green);
+  padding: 0.5rem;
+}

@@ -1,0 +1,64 @@
+.CodeMirror {
+	width: 100%;
+	height: 100%;
+	background-color: var(--offwhite);
+}
+
+.CodeMirror-linenumber {
+	color: var(--red);
+}
+
+
+.CodeMirror * {
+  font-family: Nova Mono, sans-serif;
+}
+
+.CodeMirror .cm-header {
+	color: var(--red);
+}
+
+.CodeMirror .cm-yaml {
+	background-color: var(--green);
+}
+
+.CodeMirror .cm-link {
+	color: var(--red);
+}
+.CodeMirror .cm-string {
+	color: var(--yellow);
+}
+
+.CodeMirror .cm-atom {
+	background-color: var(--green);
+	color: var(--black);
+}
+
+.CodeMirror .cm-table-row > span {
+	background-color: var(--green);
+	color: var(--black);
+}
+
+.CodeMirror .cm-attribute,
+.CodeMirror .cm-tag {
+	color: var(--red);
+}
+
+.CodeMirror .cm-keyword,
+.CodeMirror .cm-builtin {
+	color: var(--red);
+	font-weight: bold;
+	font-style: italic;
+}
+
+.CodeMirror .cm-property, 
+.CodeMirror .cm-def {
+	color: var(--black);
+}
+
+.CodeMirror .cm-number {
+	color: var(--red);
+}
+
+.CodeMirror .cm-comment {
+	color: var(--grey);
+}
