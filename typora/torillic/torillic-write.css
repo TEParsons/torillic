@@ -38,8 +38,11 @@ content {
     width: 100%;
 }
 
-#write h1, #write hr {
+#write h1, #write h2, #write hr {
     column-span: all;
+}
+#write *[mdlike="h1"], #write *[mdlike="h2"], #write *[mdlike="hr"] {
+    column-span: all !important;
 }
 
 #write .CodeMirror {
