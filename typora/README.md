@@ -14,3 +14,5 @@ This theme is a bit more complicated than most as it contains multiple files, bu
 
 Happy adventuring!
 
+# Don't have Typora?
+Well why the heck not! [Click here](https://typora.io/) for details about Typora and how to install it.
