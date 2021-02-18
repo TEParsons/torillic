@@ -39,3 +39,6 @@ td {
   background: var(--green);
   padding: 0.5rem;
 }
+blockquote table td {
+	background: rgba(1, 1, 1, 0.5);
+}
