@@ -23,6 +23,12 @@ table {
   margin: 0;
     width: 100%;
 }
+.ty-table-edit + table, .md-table-edit + table {
+	margin-top: 2rem;
+}
+.ty-table-edit, .md-table-edit {
+	margin-top: -0.5rem !important;
+}
 th {
   color: white;
   background-color: var(--red);
