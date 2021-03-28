@@ -86,6 +86,11 @@ a:active {
   color: var(--red);
 }
 
+/** Lists **/
+ul, ol {
+    padding-left: 1rem;
+}
+
 /** Other **/
 .md-footnote, sup.md-footnote {
   color: var(--red);
