@@ -64,6 +64,8 @@ content:after, .typora-export-content:after {
 }
 #typora-source {
   font-family: var(--mono) !important;
+  column-count: 1 !important;
+  column-width: auto !important;
 }
 #write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre {
   width: auto;
@@ -154,6 +156,7 @@ mark {
 }
 
 code, pre {
+  background: auto;
   font-family: var(--mono);
 }
 
