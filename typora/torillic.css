@@ -194,6 +194,7 @@ blockquote {
   padding: 6pt 12pt;
   border-top: 3pt solid var(--red);
   border-bottom: 3pt solid var(--red);
+  break-inside: avoid;
 }
 
 blockquote blockquote {
