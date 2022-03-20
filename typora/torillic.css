@@ -233,7 +233,7 @@ pre, pre.md-meta-block {
 
 blockquote {
   background-color: var(--green);
-  padding: 6pt 12pt;
+  padding: 12pt;
   border-top: 3pt solid var(--red);
   border-bottom: 3pt solid var(--red);
   break-inside: avoid;
