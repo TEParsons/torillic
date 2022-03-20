@@ -242,3 +242,23 @@ blockquote {
 blockquote blockquote {
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+/** Images **/
+
+.md-image {
+  z-index: 0;
+}
+
+.md-image:before {
+  position: absolute;
+  top: -1.5cm;
+  left: -1.5cm;
+  right: -1.5cm;
+  bottom: -0.5cm;
+  background-image: url("torillic/splash.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center-top;
+  content: " ";
+  z-index: -1;
+}
