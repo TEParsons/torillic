@@ -75,6 +75,25 @@ content:after, .typora-export-content:after {
   margin-block-start: 0;
 }
 
+/** Export **/
+@media print {
+    content, .typora-export-content {
+      position: relative;
+      background: none;
+      overflow-y: visible;
+    }
+    content:after, .typora-export-content:after {
+      display: none;
+    }
+    #write, #typora-source {
+        min-height: 0;
+        padding: 0;
+        overflow-y: visible;
+        box-shadow: none;
+        background: none;
+    }
+}
+
 /** Headings **/
 
 /* All headings */
