@@ -98,23 +98,28 @@ h1 {
 }
 
 h2 {
-  font-size: 24pt;
+  font-size: 28pt;
+  column-span: all;
 }
 
 h3 {
+  font-size: 24pt;
+}
+
+h4 {
   font-size: 18pt;
   border-bottom: 1pt solid var(--yellow);
   border-bottom: 1pt solid var(--yellow);
 }
-h3 a {
+h4 a {
   text-decoration: none;
 }
 
-h4 {
+h5 {
   font-size: 14pt;
 }
 
-h5 {
+h6 {
   font-weight: 700;
   font-size: 12pt;
 }
@@ -146,6 +151,13 @@ a:visited {
 a:hover {
   color: var(--text-color);
   text-decoration-color: var(--purple);
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+strong a {
+  color: var(--red);
 }
 
 del {
