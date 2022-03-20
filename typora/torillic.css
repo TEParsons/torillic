@@ -258,7 +258,7 @@ blockquote blockquote {
   background-image: url("torillic/splash.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center-top;
+  background-position: center top;
   content: " ";
   z-index: -1;
 }
