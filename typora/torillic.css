@@ -205,6 +205,10 @@ li::marker {
 }
 
 /** Tables **/
+table {
+  break-inside: avoid;
+}
+
 thead, th {
   font-weight: 700;
 }
@@ -214,7 +218,7 @@ tbody tr:nth-child(odd) {
 }
 
 blockquote tbody tr:nth-child(odd), pre blockquote tbody tr:nth-child(odd) {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 td, th {
