@@ -265,3 +265,6 @@ blockquote blockquote {
   content: " ";
   z-index: -1;
 }
+.on-focus-mode .md-image:before {
+  opacity: 0.2;
+}
