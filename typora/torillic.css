@@ -131,6 +131,28 @@ h6 {
   text-decoration-color: var(--yellow);
 }
 
+hr {
+  /* Common to all hr's */
+  border-top: 2pt solid transparent;
+  border-bottom: 2pt solid transparent;
+  border-left-style: solid;
+  border-left-color: var(--red);
+
+  /* Top-level hr (aka page delineator) */
+  column-span: all;
+  border-left-width: 16cm;
+  margin-top: 18pt;
+  margin-bottom: 36pt;
+}
+
+blockquote hr {
+  /* Within a blockquote (aka fancy underline) */
+  column-span: none;
+  border-left-width: 6cm;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+
 /** Body **/
 p {
   margin-block-start: 2pt;
