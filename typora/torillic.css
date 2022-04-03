@@ -287,6 +287,13 @@ blockquote blockquote {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+pre, .md-fences {
+    background: var(--green);
+    padding: 12pt;
+    break-inside: avoid;
+}
+
+
 /** Images **/
 
 .md-image {
