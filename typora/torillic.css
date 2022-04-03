@@ -73,6 +73,10 @@ content:after, .typora-export-content:after {
 #write > *:first-child {
   margin-block-start: 0;
 }
+.ty-on-typewriter-mode #write {
+  column-count: 1;
+  padding-bottom: 50%;
+}
 
 /** Export **/
 @media print {
