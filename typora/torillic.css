@@ -1,37 +1,292 @@
-/** Crimson Text **/
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
-/** Alegreya **/
-@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap");
-/** Nova Mono **/
-@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
-
-/* Try to import from GitHub */
-@import "https://teparsons.github.io/torillic/typora/torillic/torillic-typography.css";
-@import "https://teparsons.github.io/torillic/typora/torillic/torillic-elements.css";
-@import "https://teparsons.github.io/torillic/typora/torillic/torillic-code.css";
-@import "https://teparsons.github.io/torillic/typora/torillic/torillic-write.css";
-@import "https://teparsons.github.io/torillic/typora/torillic/torillic-print.css";
-@import "https://teparsons.github.io/torillic/typora/torillic/torillic-focus.css";
-@import "https://teparsons.github.io/torillic/typora/torillic/torillic-interface.css";
-
-/* Try locally, in case of connection fail */
-@import "torillic/torillic-typography.css";
-@import "torillic/torillic-elements.css";
-@import "torillic/torillic-code.css";
-@import "torillic/torillic-write.css";
-@import "torillic/torillic-print.css";
-@import "torillic/torillic-focus.css";
-@import "torillic/torillic-interface.css";
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --offwhite: #fff9e6;
-  --red: #58180d;
+  --head: 'Crimson Text';
+  --body: 'Alegreya', sans-serif;
+  --mono: 'Source Code Pro';
+  font-family: var(--body);
+  font-size: 12pt;
+
+  --offwhite: #fcf5e5;
   --green: #e0e5c1;
   --yellow: #c9ad6a;
-  --grey: #6D6A75;
-  --black: #403333;
+  --red: #822000;
+  --purple: #704cd9;
+}
 
-  font-size: 3.35mm;
-  font-family: "Alegreya", sans-serif;
-  color: var(--black);
+/** Background **/
+
+content, .typora-export-content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  background-image: url("torillic/torillic-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+content:after, .typora-export-content:after {
+  content: "Background: Dmitry Demidov via Pexels [#3843969]";
+  position: fixed;
+  bottom: 1cm;
+  left: 0;
+  width: 6.5cm;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: -1;
+  font-size: 8pt;
+  padding: 2mm 3mm;
+  border-radius: 0 2mm 2mm 0;
+}
+
+/** Page **/
+#write, #typora-source {
+  position: relative;
+  margin: 4rem auto;
+  width: 21cm;
+  min-height: 80vh;
+  padding: 2cm;
+  overflow-y: hidden;
+  box-shadow:
+    inset 0cm -0cm 0.1cm 0.05cm rgba(0, 0, 0, 0.1),
+    1cm 1cm 1cm 1cm rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
+  background-image: url("https://www.dndbeyond.com/content/1-0-1895-0/skins/waterdeep/images/mon-summary/paper-texture.png");
+  background-color: var(--offwhite);
+  /* Add columns */
+  column-count: 2;
+  column-gap: 0.5cm;
+  column-width: 8cm;
+}
+#typora-source {
+  font-family: var(--mono) !important;
+  column-count: 1 !important;
+  column-width: auto !important;
+}
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre {
+  width: auto;
+}
+#write > *:first-child {
+  margin-block-start: 0;
+}
+.ty-on-typewriter-mode #write {
+  column-count: 1;
+  padding-bottom: 50%;
+}
+
+/** Export **/
+@media print {
+    content, .typora-export-content {
+      position: relative;
+      background: none;
+      overflow-y: visible;
+    }
+    content:after, .typora-export-content:after {
+      display: none;
+    }
+    #write, #typora-source {
+        min-height: 0;
+        padding: 0;
+        overflow-y: visible;
+        box-shadow: none;
+        background: none;
+    }
+}
+
+/** Headings **/
+
+/* All headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-block-end: 2pt;
+  margin-block-start: 1em;
+  line-height: 1em;
+  break-inside: avoid;
+  break-after: avoid;
+}
+
+/* Major headings */
+h1, h2, h3, h4 {
+  font-family: var(--head);
+  font-weight: 700;
+  font-variant: small-caps;
+  color: var(--red);
+}
+
+/* Individual headings */
+h1 {
+  font-size: 36pt;
+  column-span: all;
+}
+
+h2 {
+  font-size: 28pt;
+  column-span: all;
+}
+
+h3 {
+  font-size: 24pt;
+}
+
+h4 {
+  font-size: 18pt;
+  border-bottom: 1pt solid var(--yellow);
+  border-bottom: 1pt solid var(--yellow);
+}
+h4 a {
+  text-decoration: none;
+}
+
+h5 {
+  font-size: 14pt;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12pt;
+}
+
+h6 {
+  font-size: 12pt;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+}
+
+hr {
+  /* Common to all hr's */
+  border-top: 2pt solid transparent;
+  border-bottom: 2pt solid transparent;
+  border-left-style: solid;
+  border-left-color: var(--red);
+
+  /* Top-level hr (aka page delineator) */
+  column-span: all;
+  border-left-width: 16cm;
+  margin-top: 18pt;
+  margin-bottom: 36pt;
+}
+
+blockquote hr {
+  /* Within a blockquote (aka fancy underline) */
+  column-span: none;
+  border-left-width: 6cm;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+
+/** Body **/
+p {
+  margin-block-start: 2pt;
+  break-inside: avoid;
+}
+
+strong {
+  color: var(--red);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration-color: var(--yellow);
+}
+a:visited {
+  text-decoration-color: var(--green);
+}
+a:hover {
+  color: var(--text-color);
+  text-decoration-color: var(--purple);
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+strong a {
+  color: var(--red);
+}
+
+del {
+  text-decoration-color: var(--red);
+}
+
+mark {
+  background-color: var(--green);
+}
+
+code, pre {
+  background: auto;
+  font-family: var(--mono);
+}
+
+ol, ul {
+  padding-left: 1rem;
+}
+
+li::marker {
+  font-weight: 700;
+  color: var(--red);
+}
+
+/** Tables **/
+table {
+  break-inside: avoid;
+}
+
+thead, th {
+  font-weight: 700;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--green);
+}
+
+blockquote tbody tr:nth-child(odd), pre blockquote tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+td, th {
+  padding: 3pt 6pt;
+}
+
+/** Blocks **/
+pre, pre.md-meta-block {
+  background-color: var(--green);
+  padding: 6pt;
+}
+
+blockquote {
+  background-color: var(--green);
+  padding: 12pt;
+  border-top: 3pt solid var(--red);
+  border-bottom: 3pt solid var(--red);
+  break-inside: avoid;
+}
+
+blockquote blockquote {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/** Images **/
+
+.md-image {
+  z-index: 0;
+}
+
+.md-image:before {
+  position: absolute;
+  top: -1.5cm;
+  left: -1.5cm;
+  right: -1.5cm;
+  bottom: -0.5cm;
+  background-image: url("torillic/splash.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  content: " ";
+  z-index: -1;
+}
+.on-focus-mode .md-image:before {
+  opacity: 0.2;
 }
