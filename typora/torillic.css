@@ -29,6 +29,9 @@ content, .typora-export-content {
   background-position: center;
   z-index: -2;
 }
+.typora-export-content {
+  top: 0;
+}
 content:after, .typora-export-content:after {
   content: "Background: Dmitry Demidov via Pexels [#3843969]";
   position: fixed;
