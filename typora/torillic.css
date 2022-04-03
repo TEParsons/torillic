@@ -81,6 +81,22 @@ content:after, .typora-export-content:after {
   padding-bottom: 50%;
 }
 
+/** Responsivity **/
+/* Compress for small windows */
+@media only screen and (max-width: 22cm) {
+  #write, #typora-source {
+    column-count: 1;
+    width: calc(100% - 2rem);
+    margin: 1rem;
+  }
+}
+/* Hide background credit if there's no width */
+@media only screen and (max-width: 37cm) {
+  content:after, .typora-export-content:after {
+    left: -6.1cm
+  }
+}
+
 /** Export **/
 @media print {
     content, .typora-export-content {
