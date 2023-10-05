@@ -106,11 +106,22 @@ content:before {
     content:after, .typora-export-content:after {
       display: none;
     }
+    body {
+      min-height: 0;
+      margin: 0;
+      overflow-y: visible;
+      background: none;
+    }
+    html {
+      background-image: url("https://www.dndbeyond.com/content/1-0-1895-0/skins/waterdeep/images/mon-summary/paper-texture.png");
+      background-color: var(--offwhite);
+    }
     #write, #typora-source {
-        min-height: 0;
-        padding: 0;
-        overflow-y: visible;
+      background: none;
         box-shadow: none;
+        box-shadow: none;
+        background: none;
+      box-shadow: none;
         background: none;
     }
 }
@@ -283,6 +294,12 @@ blockquote {
 
 blockquote blockquote {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+pre, .md-fences {
+    background: var(--green);
+    padding: 12pt;
+    break-inside: avoid;
 }
 
 /** Images **/
