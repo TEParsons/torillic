@@ -19,20 +19,14 @@
 /** Background **/
 
 content, .typora-export-content {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: scroll;
   background-image: url("torillic/torillic-bg.jpg");
   background-size: cover;
   background-position: center;
-  z-index: -2;
 }
 .typora-export-content {
   top: 0;
 }
-content:after, .typora-export-content:after {
+content:before {
   content: "Background: Dmitry Demidov via Pexels [#3843969]";
   position: fixed;
   bottom: 1cm;
@@ -40,7 +34,6 @@ content:after, .typora-export-content:after {
   width: 6.5cm;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  z-index: -1;
   font-size: 8pt;
   padding: 2mm 3mm;
   border-radius: 0 2mm 2mm 0;
@@ -95,6 +88,12 @@ content:after, .typora-export-content:after {
   content:after, .typora-export-content:after {
     left: -6.1cm
   }
+}
+
+/** Interface **/
+.native-window #md-searchpanel {
+  background: var(--green);
+  border-bottom: 2pt solid var(--red);
 }
 
 /** Export **/
