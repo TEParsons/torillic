@@ -3,5 +3,5 @@ As of 2.0.2 I've been trying to stick to [Conventional Commits](https://www.conv
 - `fix`: Fixing a bug
 - `feat`: Adding a feature
 - `docs`: Updating documentation
-- `refactor`: Changing structure without functional changes
+- `refac`: Changing structure without functional changes
 - `chore`: Admin type stuff
