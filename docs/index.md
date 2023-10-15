@@ -2,6 +2,8 @@
 
 *Huge dragon, lawful evil*
 
+![Ancient Blue Dragon - Monsters - Archives of Nethys: Pathfinder ...](https://2e.aonprd.com/Images/Monsters/DragonBlue_AncientBlueDragon.png){.md-image}
+
 > **Armor Class** 19 (Natural Armor)
 > **Hit Points** 225 (18d12 + 108)
 > **Speed** 40 ft., burrow 30 ft., fly 80 ft.
@@ -17,10 +19,6 @@
 > **Senses** [Blindsight](https://www.dndbeyond.com/compendium/rules/basic-rules/monsters#Blindsight) 60 ft., [Darkvision](https://www.dndbeyond.com/compendium/rules/basic-rules/monsters#Darkvision) 120 ft., Passive Perception 22
 > **Languages** Common, Draconic
 > **Challenge** 16 (15,000 XP)
-
-![Ancient Blue Dragon - Monsters - Archives of Nethys: Pathfinder ...](https://2e.aonprd.com/Images/Monsters/DragonBlue_AncientBlueDragon.png){.md-image}
-
----
 
 ***Legendary Resistance (3/Day).*** If the dragon fails a saving throw, it can choose to succeed instead.
 
