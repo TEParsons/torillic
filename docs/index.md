@@ -18,7 +18,7 @@
 > **Languages** Common, Draconic
 > **Challenge** 16 (15,000 XP)
 
-![Ancient Blue Dragon - Monsters - Archives of Nethys: Pathfinder ...](https://2e.aonprd.com/Images/Monsters/DragonBlue_AncientBlueDragon.png)
+![Ancient Blue Dragon - Monsters - Archives of Nethys: Pathfinder ...](https://2e.aonprd.com/Images/Monsters/DragonBlue_AncientBlueDragon.png){.md-image}
 
 ---
 
