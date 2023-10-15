@@ -21,7 +21,7 @@ template = template_file.read_text(encoding="utf-8")
 content_md = content_file.read_text(encoding="utf-8")
 
 # setup markdown parser
-md = markdown.Markdown(extensions=["extra"])
+md = markdown.Markdown(extensions=["extra", "nl2br"])
 
 # parse markdown content
 content_html = md.convert(content_md)
