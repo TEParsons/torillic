@@ -10,7 +10,7 @@ Torillic v2 is the second incarnation of the Torillic theme, you can download ol
 Like all Typora themes, Torillic uses [markdown syntax](https://www.markdownguide.org/basic-syntax/), but here's a few tips and tricks for getting the most out of this theme:
 
 - Using `> blockquotes` will create a green box like the ones used in 5e stat blocks
-- In full page view, content is arranged into two columns - however, `# heading 1` and `---` (horizontal line) elements span both columns so can be used as separators
+- In full page view, content is arranged into two columns - however, `# heading 1` and `# heading 2` elements span both columns so can be used as separators. A blank top-level heading will still split the page.
 - The heading with a yellow line underneath (you know the one) is `#### heading 4`
 - Actions in 5e stat blocks are generally formatted like so:
 ```markdown
