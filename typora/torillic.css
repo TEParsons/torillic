@@ -126,6 +126,14 @@ content:before {
         background: none;
     }
 }
+@media print and (max-width: 14cm) {
+  #write, #typora-source {
+    column-count: 1;
+    margin: 1cm;
+    column-width: 100%;
+    width: 100%;
+  }
+}
 
 /** Headings **/
 
