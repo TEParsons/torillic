@@ -138,15 +138,22 @@ h1, h2, h3, h4, h5, h6 {
   break-after: avoid;
 }
 
-/* Major headings */
+/* Headings */
 h1, h2, h3, h4 {
   font-family: var(--head);
   font-weight: 700;
   font-variant: small-caps;
   color: var(--red);
 }
+h1 + *,
+h2 + *,
+h3 + *,
+h4 + *,
+h5 + *,
+h6 + * {
+  break-before: avoid;
+}
 
-/* Individual headings */
 h1 {
   font-size: 36pt;
   column-span: all;
