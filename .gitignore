@@ -4,3 +4,4 @@ desktop.ini
 __pycache__
 .venv*
 venv*
+*.egg-info
