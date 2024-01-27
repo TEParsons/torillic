@@ -7,3 +7,6 @@ authors = [
 
 [project.entry-points."sphinx.html_themes"]
 torillic = "torillic"
+
+[tool.setuptools.package-data]
+"*" = ["*.py", "*.png", "*.jpg*, "*.css", "*.html", "*.conf"]
