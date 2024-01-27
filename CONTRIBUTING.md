@@ -4,4 +4,4 @@ As of 2.0.2 I've been trying to stick to [Conventional Commits](https://www.conv
 - `feat`: Adding a feature
 - `docs`: Updating documentation
 - `refac`: Changing structure without functional changes
-- `chore`: Admin type stuff
+- `sys`: Admin type stuff
