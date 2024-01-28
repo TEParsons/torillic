@@ -9,4 +9,4 @@ authors = [
 torillic = "torillic"
 
 [tool.setuptools.package-data]
-"*" = ["*.py", "*.png", "*.jpg*, "*.css", "*.html", "*.conf"]
+"*" = ["*.py", "*.png", "*.jpg", "*.css", "*.html", "*.conf"]
