@@ -7,3 +7,4 @@ venv*
 *.egg-info
 
 sphinx/tests/artefacts
+.pytest_cache
