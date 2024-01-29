@@ -17,12 +17,15 @@
 }
 
 /** Background **/
-
+body {
+  margin: 0;
+}
 content, .typora-export-content {
   background-image: url("torillic/torillic-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding: 4rem;
 }
 .typora-export-content {
   top: 0;
@@ -43,7 +46,7 @@ content:before {
 /** Page **/
 #write, #typora-source {
   position: relative;
-  margin: 4rem auto;
+  margin: auto;
   width: 21cm;
   min-height: 80vh;
   padding: 2cm;
