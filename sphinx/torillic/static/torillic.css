@@ -323,12 +323,12 @@ pre, .md-fences {
 
 /** Images **/
 
-.md-image {
+img {
   z-index: 0;
   max-width: 100%;
 }
 
-.md-image:before {
+img:before {
   position: absolute;
   top: -1.5cm;
   left: -1.5cm;
@@ -341,6 +341,22 @@ pre, .md-fences {
   content: " ";
   z-index: -1;
 }
-.on-focus-mode .md-image:before {
+.on-focus-mode img:before {
   opacity: 0.2;
+}
+
+/* Sphinx */
+.headerlink {
+  visibility: hidden;
+  margin-left: 1rem;
+  font-size: 0.8em;
+}
+
+h1:hover > .headerlink,
+h2:hover > .headerlink,
+h3:hover > .headerlink,
+h4:hover > .headerlink,
+h5:hover > .headerlink,
+h6:hover > .headerlink {
+  visibility: visible;
 }
