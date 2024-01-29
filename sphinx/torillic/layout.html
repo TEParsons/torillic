@@ -1,9 +1,15 @@
 <head>
-    <link rel="stylesheet" href="_static/torillic.css" />
+    <link rel="stylesheet" href="{{ pathto('_static/torillic.css', 1) }}" type="text/css" />
 </head>
-<main class=typora-export-content>
-    <div id=write>
-        {% block document %}{% endblock %}
+<div class=typora-export-content>
+    <div role="main" id="write">
+        {{ body }}
+        
+        {% if parents %}
+        <hr>
+        {{ parents }}
+        {% endif %}
+        
     </div>
-</main>
+</div>
 </body>
