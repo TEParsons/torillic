@@ -8,3 +8,7 @@ venv*
 
 sphinx/tests/artefacts
 .pytest_cache
+
+sphinx/example/docs
+sphinx/example/stdout.txt
+sphinx/example/stderr.txt
