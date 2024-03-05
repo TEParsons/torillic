@@ -323,21 +323,51 @@ pre, .md-fences {
 .md-image {
   z-index: 0;
   max-width: 100%;
+  position: relative;
 }
 
 .md-image:before {
   position: absolute;
-  top: -1.5cm;
-  left: -1.5cm;
-  right: -1.5cm;
-  bottom: -0.5cm;
+  top: -20%;
+  left: -20%;
+  right: -20%;
+  bottom: -20%;
+  max-width: calc(100% + 1cm);
   background-image: url("torillic/splash.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
+  overflow: visible;
   content: " ";
   z-index: -1;
 }
 .on-focus-mode .md-image:before {
   opacity: 0.2;
+}
+
+/** Substitutions **/
+img[src="copper"],
+img[src="c"] {
+  display: inline;
+  content:url("torillic/copper.png");
+}
+img[src="silver"],
+img[src="s"] {
+  display: inline;
+  content:url("torillic/silver.png");
+}
+img[src="electrum"],
+img[src="e"] {
+  display: inline;
+  content:url("torillic/electrum.png");
+}
+img[src="gold"],
+img[src="g"] {
+  display: inline;
+  content:url("torillic/gold.png");
+}
+img[src="platinum"],
+img[src="p"] {
+  display: inline;
+  content:url("torillic/platinum.png");
 }

@@ -12,3 +12,5 @@ sphinx/tests/artefacts
 sphinx/example/docs
 sphinx/example/stdout.txt
 sphinx/example/stderr.txt
+
+scratch.*
