@@ -348,36 +348,31 @@ pre, .md-fences {
 /** Substitutions **/
 img[src="copper"],
 img[src="c"],
-.md-image[data-src="copper"],
-.md-image[data-src="c"] {
+.md-image[data-src="copper"] {
   display: inline;
   content:url("torillic/copper.png");
 }
 img[src="silver"],
 img[src="s"],
-.md-image[data-src="silver"],
-.md-image[data-src="s"] {
+.md-image[data-src="silver"] {
   display: inline;
   content:url("torillic/silver.png");
 }
 img[src="electrum"],
 img[src="e"],
-.md-image[data-src="electrum"],
-.md-image[data-src="e"] {
+.md-image[data-src="electrum"] {
   display: inline;
   content:url("torillic/electrum.png");
 }
 img[src="gold"],
 img[src="g"],
-.md-image[data-src="gold"],
-.md-image[data-src="g"] {
+.md-image[data-src="gold"] {
   display: inline;
   content:url("torillic/gold.png");
 }
 img[src="platinum"],
 img[src="p"],
-.md-image[data-src="platinum"],
-.md-image[data-src="p"] {
+.md-image[data-src="platinum"] {
   display: inline;
   content:url("torillic/platinum.png");
 }
