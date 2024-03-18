@@ -351,12 +351,14 @@ pre, .md-fences {
 }
 .break-page-before {
   break-before: page;
+  column-span: all;
 }
 .break-column-after {
   break-after: column;
 }
 .break-page-after {
   break-after: page;
+  column-span: all;
 }
 
 /** Substitutions **/
