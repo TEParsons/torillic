@@ -345,6 +345,20 @@ pre, .md-fences {
   opacity: 0.2;
 }
 
+/** Manual breaking **/
+.break-column-before {
+  break-before: column;
+}
+.break-page-before {
+  break-before: page;
+}
+.break-column-after {
+  break-after: column;
+}
+.break-page-after {
+  break-after: page;
+}
+
 /** Substitutions **/
 img[src="copper"],
 img[src="c"],
