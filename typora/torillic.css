@@ -145,14 +145,6 @@ h1, h2, h3, h4, h5, h6 {
   break-inside: avoid;
   break-after: avoid;
 }
-
-/* Headings */
-h1, h2, h3, h4 {
-  font-family: var(--head);
-  font-weight: 700;
-  font-variant: small-caps;
-  color: var(--red);
-}
 h1 + *,
 h2 + *,
 h3 + *,
@@ -160,6 +152,21 @@ h4 + *,
 h5 + *,
 h6 + * {
   break-before: avoid;
+}
+h1 + i,
+h2 + i,
+h3 + i,
+h4 + i,
+h5 + i,
+h6 + i {
+  break-after: avoid;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--head);
+  font-weight: 700;
+  font-variant: small-caps;
+  color: var(--red);
 }
 
 h1 {
