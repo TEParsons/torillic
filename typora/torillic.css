@@ -125,7 +125,8 @@ content:before {
       box-shadow: none;
         background: none;
     }
-    h1:empty {
+    h1:empty,
+    h3:empty {
       border: none;
     }
 }
@@ -193,6 +194,12 @@ h2 {
 
 h3 {
   font-size: 24pt;
+}
+h3:empty {
+  margin: -1cm 0;
+  line-height: 1cm;
+  break-before: column;
+  border-top: 1px solid var(--green);
 }
 
 h4 {
