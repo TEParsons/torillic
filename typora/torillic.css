@@ -172,6 +172,15 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 36pt;
   column-span: all;
+  break-before: page;
+}
+h1:empty {
+  margin: 1cm -1cm 2cm -1cm;
+  line-height: 1cm;
+  border-bottom: 1px solid var(--green);
+}
+h1:empty + * {
+  margin-top: 0;
 }
 
 h2 {
