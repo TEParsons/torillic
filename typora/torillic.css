@@ -2,58 +2,58 @@
 /* Crimson Text (headings) */
 @font-face {
   font-family: "Crimson Text";
-  src: url('torillic/fonts/CrimsonText/CrimsonText-Bold.ttf');
+  src: url('torillic/assets/fonts/CrimsonText/CrimsonText-Bold.ttf');
   font-weight: 700;
 }
 @font-face {
   font-family: "Crimson Text";
-  src: url('torillic/fonts/CrimsonText/CrimsonText-BoldItalic.ttf');
+  src: url('torillic/assets/fonts/CrimsonText/CrimsonText-BoldItalic.ttf');
   font-weight: 700;
   font-style: italic;
 }
 /* Alegreya (body) */
 @font-face {
   font-family: "Alegreya";
-  src: url('torillic/fonts/Alegreya/Alegreya-Regular.ttf');
+  src: url('torillic/assets/fonts/Alegreya/Alegreya-Regular.ttf');
   font-weight: 400;
 }
 @font-face {
   font-family: "Alegreya";
-  src: url('torillic/fonts/Alegreya/Alegreya-Italic.ttf');
+  src: url('torillic/assets/fonts/Alegreya/Alegreya-Italic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Alegreya";
-  src: url('torillic/fonts/Alegreya/Alegreya-Bold.ttf');
+  src: url('torillic/assets/fonts/Alegreya/Alegreya-Bold.ttf');
   font-weight: 700;
 }
 @font-face {
   font-family: "Alegreya";
-  src: url('torillic/fonts/Alegreya/Alegreya-BoldItalic.ttf');
+  src: url('torillic/assets/fonts/Alegreya/Alegreya-BoldItalic.ttf');
   font-weight: 700;
   font-style: italic;
 }
 /* Source Code Pro (mono) */
 @font-face {
   font-family: "Source Code Pro";
-  src: url('torillic/fonts/SourceCodePro/SourceCodePro-Regular.ttf');
+  src: url('torillic/assets/fonts/SourceCodePro/SourceCodePro-Regular.ttf');
   font-weight: 400;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url('torillic/fonts/SourceCodePro/SourceCodePro-Italic.ttf');
+  src: url('torillic/assets/fonts/SourceCodePro/SourceCodePro-Italic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url('torillic/fonts/SourceCodePro/SourceCodePro-Bold.ttf');
+  src: url('torillic/assets/fonts/SourceCodePro/SourceCodePro-Bold.ttf');
   font-weight: 700;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url('torillic/fonts/SourceCodePro/SourceCodePro-BoldItalic.ttf');
+  src: url('torillic/assets/fonts/SourceCodePro/SourceCodePro-BoldItalic.ttf');
   font-weight: 700;
   font-style: italic;
 }
@@ -75,7 +75,7 @@
 /** Background **/
 
 content, .typora-export-content {
-  background-image: url("torillic/torillic-bg.jpg");
+  background-image: url("torillic/assets/torillic-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -415,7 +415,7 @@ pre, .md-fences {
   right: -20%;
   bottom: -20%;
   max-width: calc(100% + 1cm);
-  background-image: url("torillic/splash.png");
+  background-image: url("torillic/assets/splash.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -448,29 +448,29 @@ img[src="copper"],
 img[src="c"],
 .md-image[data-src="copper"] {
   display: inline;
-  content:url("torillic/copper.png");
+  content:url("torillic/assets/coins/copper.png");
 }
 img[src="silver"],
 img[src="s"],
 .md-image[data-src="silver"] {
   display: inline;
-  content:url("torillic/silver.png");
+  content:url("torillic/assets/coins/silver.png");
 }
 img[src="electrum"],
 img[src="e"],
 .md-image[data-src="electrum"] {
   display: inline;
-  content:url("torillic/electrum.png");
+  content:url("torillic/assets/coins/electrum.png");
 }
 img[src="gold"],
 img[src="g"],
 .md-image[data-src="gold"] {
   display: inline;
-  content:url("torillic/gold.png");
+  content:url("torillic/assets/coins/gold.png");
 }
 img[src="platinum"],
 img[src="p"],
 .md-image[data-src="platinum"] {
   display: inline;
-  content:url("torillic/platinum.png");
+  content:url("torillic/assets/coins/platinum.png");
 }
