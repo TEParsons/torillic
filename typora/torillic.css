@@ -1,6 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/** Load fonts from files **/
+/* Crimson Text (headings) */
+@font-face {
+  font-family: "Crimson Text";
+  src: url('torillic/fonts/CrimsonText/CrimsonText-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url('torillic/fonts/CrimsonText/CrimsonText-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+/* Alegreya (body) */
+@font-face {
+  font-family: "Alegreya";
+  src: url('torillic/fonts/Alegreya/Alegreya-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url('torillic/fonts/Alegreya/Alegreya-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url('torillic/fonts/Alegreya/Alegreya-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url('torillic/fonts/Alegreya/Alegreya-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+/* Source Code Pro (mono) */
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('torillic/fonts/SourceCodePro/SourceCodePro-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('torillic/fonts/SourceCodePro/SourceCodePro-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('torillic/fonts/SourceCodePro/SourceCodePro-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('torillic/fonts/SourceCodePro/SourceCodePro-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
 
 :root {
   --head: 'Crimson Text';
