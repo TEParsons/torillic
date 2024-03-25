@@ -1,0 +1,130 @@
+{
+    "splash.png": {
+        "author": {
+            "name": "Todd Parsons",
+            "link": "https://github.com/TEParsons"
+        }
+    },
+    "torillic-bg.jpg": {
+        "source": "https://www.pexels.com/photo/3843969/",
+        "author": {
+            "name": "Dmitry Demidov",
+            "link": "https://www.pexels.com/@dmitry-demidov-515774/"
+        },
+        "vendor": {
+            "name": "Pexels",
+            "link": "https://www.pexels.com"
+        }
+    },
+    "paper-texture.jpg": {
+        "source": "https://www.dndbeyond.com/content/1-0-1895-0/skins/waterdeep/images/mon-summary/paper-texture.png",
+        "author": {
+            "name": "Wizards of the Coast",
+            "link": "https://company.wizards.com/en"
+        },
+        "vendor": {
+            "name": "D&D Beyond",
+            "link": "https://www.dndbeyond.com"
+        },
+        "notes": "Scraped from NPC page"
+    },
+    "coins/copper.png": {
+        "source": "https://www.dndbeyond.com",
+        "author": {
+            "name": "Wizards of the Coast",
+            "link": "https://company.wizards.com/en"
+        },
+        "vendor": {
+            "name": "D&D Beyond",
+            "link": "https://www.dndbeyond.com"
+        },
+        "notes": "Scraped from character sheet page"
+    },
+    "coins/silver.png": {
+        "source": "https://www.dndbeyond.com",
+        "author": {
+            "name": "Wizards of the Coast",
+            "link": "https://company.wizards.com/en"
+        },
+        "vendor": {
+            "name": "D&D Beyond",
+            "link": "https://www.dndbeyond.com"
+        },
+        "notes": "Scraped from character sheet page"
+    },
+    "coins/electrum.png": {
+        "source": "https://www.dndbeyond.com",
+        "author": {
+            "name": "Wizards of the Coast",
+            "link": "https://company.wizards.com/en"
+        },
+        "vendor": {
+            "name": "D&D Beyond",
+            "link": "https://www.dndbeyond.com"
+        },
+        "notes": "Scraped from character sheet page"
+    },
+    "coins/gold.png": {
+        "source": "https://www.dndbeyond.com",
+        "author": {
+            "name": "Wizards of the Coast",
+            "link": "https://company.wizards.com/en"
+        },
+        "vendor": {
+            "name": "D&D Beyond",
+            "link": "https://www.dndbeyond.com"
+        },
+        "notes": "Scraped from character sheet page"
+    },
+    "coins/platinum.png": {
+        "source": "https://www.dndbeyond.com",
+        "author": {
+            "name": "Wizards of the Coast",
+            "link": "https://company.wizards.com/en"
+        },
+        "vendor": {
+            "name": "D&D Beyond",
+            "link": "https://www.dndbeyond.com"
+        },
+        "notes": "Scraped from character sheet page"
+    },
+    "fonts/Alegreya": {
+        "source": "https://fonts.google.com/specimen/Alegreya",
+        "author": [
+            {
+                "name": "Juan Pablo del Peral",
+                "link": "https://fonts.google.com/?query=Juan%20Pablo%20del%20Peral"
+            }, 
+            {
+                "name": "Huerta Tipográfica",
+                "link": "https://fonts.google.com/?query=Huerta%20Tipogr%C3%A1fica"
+            }
+        ],
+        "vendor": {
+            "name": "Google Fonts",
+            "link": "https://fonts.google.com/"
+        }
+    },
+    "fonts/CrimsonText": {
+        "source": "https://fonts.google.com/specimen/Crimson+Text",
+        "author": {
+            "name": "Sebastian Kosch",
+            "link": "https://fonts.google.com/?query=Sebastian%20Kosch"
+        },
+        "vendor": {
+            "name": "Google Fonts",
+            "link": "https://fonts.google.com/"
+        }
+    },
+    "fonts/SourceCodePro": {
+        "source": "https://fonts.google.com/specimen/Source+Code+Pro",
+        "author": {
+            "name": "Paul D. Hunt",
+            "link": "https://fonts.google.com/?query=Paul%20D.%20Hunt"
+        },
+        "vendor": {
+            "name": "Google Fonts",
+            "link": "https://fonts.google.com/"
+        }
+    }
+}
