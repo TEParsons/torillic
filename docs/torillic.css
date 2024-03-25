@@ -1,0 +1,45 @@
+@import url("torillic/torillic.css");
+
+/* make visual indicators of column/page breaks in Typora */
+h1:empty {
+  margin: 1cm -1cm 2cm -1cm;
+  line-height: 1cm;
+  border-bottom: 1px solid var(--green);
+}
+h3:before {
+  margin-top: -1cm;
+  line-height: 1cm;
+  border-top: 1px solid var(--green);
+}
+/* style source code view */
+#typora-source {
+  font-family: var(--mono) !important;
+  column-count: 1 !important;
+  column-width: auto !important;
+}
+/* style typewriter mode view */
+.ty-on-typewriter-mode #write {
+  column-count: 1;
+  padding-bottom: 50%;
+}
+/* dim image splash in focus mode */
+.on-focus-mode img{
+  background-blend-mode: overlay;
+}
+/* force images to content-box so the padding trick works */
+img {
+  box-sizing: content-box;
+  margin: -5mm !important;
+}
+
+
+
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre {
+  width: auto;
+}
+
+/** Interface **/
+.native-window #md-searchpanel {
+  background: var(--green);
+  border-bottom: 2pt solid var(--red);
+}
