@@ -29,6 +29,9 @@ for backend in ("sphinx", "typora"):
         for ignore in ignore_list:
             ignore_files = (root / backend).glob(f"**/{ignore}")
             include_files -= set(ignore_files)
+        # remove any errant stub files
+        stub_files = (root / backend).glob("**/*.stub")
+        include_files -= set(stub_files)
         # add each to the zip
         for file in include_files:
             zip.write(
