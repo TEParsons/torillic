@@ -45,3 +45,63 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ***Tail Attack.*** The dragon makes a tail attack.
 
 ***Wing Attack (Costs 2 Actions).*** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked [prone](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Prone). The dragon can then fly up to half its flying speed.
+
+# 
+
+### Cultist
+
+*Medium Humanoid (Any Race), Any Non-Good Alignment*
+
+![Cultist](https://www.dndbeyond.com/avatars/thumbnails/14/481/1000/1000/636364323106021375.png){.md-image}
+
+> **Armor Class** 12 (leather armor)
+> **Hit Points** 9 (2d8)
+> **Speed** 30 ft.
+>
+> | STR  | DEX  | CON  | INT  | WIS  | CHA  |
+> |------|------|------|------|------|------|
+> | 11   | 12   | 10   | 10   | 11   | 10   |
+> | (+0) | (+1) | (+0) | (+0) | (+0) | (+0) |
+> 
+> **Skills** [Deception](https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Deception) +2, [Religion](https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Religion) +2
+> **Senses** Passive Perception 10
+> **Languages** Any one language (usually Common)
+> **Challenge** 1/8 (25 XP)
+
+***Dark Devotion.*** The cultist has advantage on saving throws against being [charmed](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Charmed) or [frightened](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Frightened).
+
+#### Actions
+
+***Scimitar.** Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 4 (1d6 + 1) slashing damage.
+
+### 
+
+### Kobold
+
+*Small Humanoid (Kobold), Lawful Evil*
+
+![Kobold](https://www.dndbeyond.com/avatars/thumbnails/30832/207/1000/1000/638063832924455756.png)
+
+> **Armor Class** 12
+> **Hit Points** 5 (2d6 - 2)
+> **Speed** 30 ft.
+> 
+> | STR  | DEX  | CON  | INT  | WIS  | CHA  |
+> |------|------|------|------|------|------|
+> | 7    | 15   | 9    | 8    | 7    | 8    |
+> | (-2) | (+2) | (-1) | (-1) | (-2) | (-1) |
+> 
+> **Senses** [Darkvision](https://www.dndbeyond.com/compendium/rules/basic-rules/monsters#Darkvision) 60 ft., Passive Perception 8
+> **Languages** Common, Draconic
+> **Challenge** 1/8 (25 XP)
+
+***Sunlight Sensitivity.*** While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom ([Perception](https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Perception)) checks that rely on sight.
+
+***Pack Tactics.*** The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't [incapacitated](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Incapacitated).
+
+#### Actions
+
+***Dagger.** Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4 + 2) piercing damage.
+
+***Sling.** Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 4 (1d4 + 2) bludgeoning damage.
+
