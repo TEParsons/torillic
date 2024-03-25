@@ -16,7 +16,7 @@ for stub in root.glob("**/*.stub"):
     # convert the stub to a folder
     target = stub.parent / stub.stem
     # delete the stub file
-    # stub.unlink()
+    stub.unlink()
     # copy the base files to the new folder
     shutil.copytree(base, target)
     # log
