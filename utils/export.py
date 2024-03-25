@@ -19,7 +19,7 @@ if not target.is_dir():
 ignore_list = (root / ".gitignore").read_text().split("\n")
 
 # write a zip file for each backend
-for backend in ("sphinx", "typora"):
+for backend in ("base", "sphinx", "typora"):
     # make zip
     with zipfile.ZipFile(target / (backend + ".zip"), "w") as zip:
         # get all files
