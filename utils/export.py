@@ -3,12 +3,13 @@ Basic script to generate necessary binaries for a release.
 """
 
 from pathlib import Path
-import shutil
 import zipfile
 
-# root folder
-root = Path(__file__).parent.parent
-# folder to put files in
+# ref to this folder
+folder = Path(__file__).parent
+# ref to root folder
+root = folder.parent
+# ref to binaries folder
 target = root / ".export"
 # make sure target folder exists
 if not target.is_dir():

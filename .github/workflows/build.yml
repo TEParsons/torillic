@@ -13,15 +13,24 @@ jobs:
           uses: actions/checkout@master
           with:
             fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-        - name: Build
-          run: |
-            python utils/build.py
-        - name: Commit
+        - name: Setup git
           run: |
             git config --global user.email "todd.e.parsons@googlemail.com"
             git config --global user.name "Todd Parsons"
+        - name: Build
+          run: |
+            python utils/build.py
+        - name: Commit build
+          run: |
             git add --all
-            git commit --all -m "sys: Copy base Torillic into platform-specific folders."
+            git commit --all -m "sys: Copy base Torillic into platform-specific folders"
+        - name: Export
+          run: |
+            python utils/export.py
+        - name: Commit export
+          run: |
+            git add --all
+            git commit --all -m "sys: Build binaries"
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
