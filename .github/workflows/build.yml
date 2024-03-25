@@ -16,12 +16,12 @@ jobs:
         - name: Build
           run: |
             python utils/build.py
-            - name: Commit
-            run: |
-              git config --global user.email "todd.e.parsons@googlemail.com"
-              git config --global user.name "Todd Parsons"
-              git add --all
-              git commit --all -m "sys: Copy base Torillic into platform-specific folders."
+        - name: Commit
+          run: |
+            git config --global user.email "todd.e.parsons@googlemail.com"
+            git config --global user.name "Todd Parsons"
+            git add --all
+            git commit --all -m "sys: Copy base Torillic into platform-specific folders."
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
