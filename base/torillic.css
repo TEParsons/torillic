@@ -2,6 +2,17 @@
 /* Crimson Text (headings) */
 @font-face {
   font-family: "Crimson Text";
+  src: url('assets/fonts/CrimsonText/CrimsonText-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url('assets/fonts/CrimsonText/CrimsonText-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Crimson Text";
   src: url('assets/fonts/CrimsonText/CrimsonText-Bold.ttf');
   font-weight: 700;
 }
