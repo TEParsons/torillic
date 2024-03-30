@@ -1,0 +1,8 @@
+[project]
+name = "mkdocs-torillic"
+version = "2.0.3"
+authors = [
+    {name = "Todd Parsons", email = "todd.e.parsons@gmail.com"}
+]
+[project.entry-points."mkdocs.themes"]
+torillic = "torillic"
