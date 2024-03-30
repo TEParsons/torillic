@@ -106,6 +106,49 @@ content, .typora-export-content  /* typora */
   }
 }
 
+/** Header (web only) **/
+.torillic-header {
+  display: grid;
+  place-items: center;
+  width: 21cm;
+  margin: auto;
+}
+
+.torillic-header h1, 
+.torillic-header h3, 
+.torillic-header a {
+  color: white;
+}
+
+.torillic-header h1 {
+  text-align: center;
+  font-size: 2cm;
+  text-shadow: 1mm 1mm 2mm rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+/* Navigation */
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 1cm;
+  font-family: var(--head);
+  font-size: 1.5em;
+}
+nav a, 
+nav a:visited {
+  font-size: 8mm;
+  font-weight: normal;
+  text-decoration: underline var(--yellow);
+}
+nav a:hover {
+  text-decoration-color: var(--green);
+}
+nav a.current {
+  font-weight: bold;
+}
+
 /** Page **/
 .torillic-page,  /* generic HTML */
 #write, #typora-source  /* typora */ 
