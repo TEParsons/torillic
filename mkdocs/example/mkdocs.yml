@@ -1,0 +1,12 @@
+theme:
+  name: null
+  custom_dir: '../torillic'
+  features: 
+    - navigation.pathnavigation
+site_name: Torillic MkDocs Example Wiki
+docs_dir: src
+nav:
+  - Home: index.md
+  - Geese: geese/index.md
+exclude_docs: |
+  desktop.ini
