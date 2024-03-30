@@ -116,13 +116,14 @@ content, .typora-export-content  /* typora */
 
 .torillic-header h1, 
 .torillic-header h3, 
-.torillic-header a {
+.torillic-header a,
+.torillic-header a:hover {
   color: white;
 }
 
 .torillic-header h1 {
   text-align: center;
-  font-size: 2cm;
+  font-size: 5rem;
   text-shadow: 1mm 1mm 2mm rgba(0, 0, 0, 0.5);
   margin-top: 0;
 }
@@ -134,11 +135,10 @@ nav {
   place-items: center;
   gap: 1cm;
   font-family: var(--head);
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 nav a, 
 nav a:visited {
-  font-size: 8mm;
   font-weight: normal;
   text-decoration: underline var(--yellow);
 }
