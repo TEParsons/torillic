@@ -10,3 +10,5 @@ nav:
   - Geese: geese/index.md
 exclude_docs: |
   desktop.ini
+markdown_extensions:
+  - nl2br
