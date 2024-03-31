@@ -1,6 +1,6 @@
 [project]
 name = "sphinx-torillic"
-version = "2.0.3"
+version = "{{VERSION}}"
 authors = [
     {name = "Todd Parsons", email = "todd.e.parsons@gmail.com"}
 ]
