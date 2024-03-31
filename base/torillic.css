@@ -391,6 +391,9 @@ img {
   margin: -5mm;
 }
 
+img.torillic-no-splash {
+  background-image: none;
+}
 
 /** Manual breaking **/
 
