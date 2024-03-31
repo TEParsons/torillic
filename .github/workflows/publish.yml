@@ -24,7 +24,7 @@ jobs:
       run: echo "version=$(cat version)" >> $GITHUB_OUTPUT
     - name: Validate package versions
       run: >-
-        test $GITHUB_REF == ${{ steps.version.outputs.version }}
+        test $GITHUB_REF = ${{ steps.version.outputs.version }}
     - name: Build
       run: >-
         python -m build mkdocs
