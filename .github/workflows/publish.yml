@@ -32,4 +32,4 @@ jobs:
         python -m build mkdocs
     - name: Upload
       run: >-
-        twine upload mkdocs/dist/* ${{ secrets.PYPI_API_TOKEN }}
+        twine upload mkdocs/dist/* -i ${{ secrets.PYPI_API_TOKEN }}
