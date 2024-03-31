@@ -17,19 +17,19 @@ jobs:
       with:
         python-version: '3.10'
     - name: Install packages
-      run: >-
+      run: |
         python -m pip install build twine
     - name: Get version from file
       id: version
       run: echo "version=$(cat version)" >> $GITHUB_OUTPUT
     - name: Validate package versions
-      run: >-
+      run: |
         echo $GITHUB_REF
         echo ${{ steps.version.outputs.version }}
         test $GITHUB_REF = ${{ steps.version.outputs.version }}
     - name: Build
-      run: >-
+      run: |
         python -m build mkdocs
     - name: Upload
-      run: >-
+      run: |
         twine upload mkdocs/dist/* -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
