@@ -461,29 +461,34 @@ img[src="copper"], img[src="c"],  /* generic HTML */
 .md-image[data-src="copper"]  /* typora */
 {
   display: inline;
+  background-image: none;
   content:url("torillic/copper.png");
 }
 img[src="silver"], img[src="s"],  /* generic HTML */
 .md-image[data-src="silver"]  /* typora */
 {
   display: inline;
+  background-image: none;
   content:url("torillic/silver.png");
 }
 img[src="electrum"], img[src="e"],  /* generic HTML */
 .md-image[data-src="electrum"]  /* typora */
 {
   display: inline;
+  background-image: none;
   content:url("torillic/electrum.png");
 }
 img[src="gold"], img[src="g"],  /* generic HTML */
 .md-image[data-src="gold"]  /* typora */
 {
   display: inline;
+  background-image: none;
   content:url("torillic/gold.png");
 }
 img[src="platinum"], img[src="p"],  /* generic HTML */
 .md-image[data-src="platinum"]  /* typora */
 {
   display: inline;
+  background-image: none;
   content:url("torillic/platinum.png");
 }
