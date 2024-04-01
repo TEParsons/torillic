@@ -2,7 +2,7 @@ name: Pages
 on:
   push:
     branches:
-    - main
+    - release
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,16 +16,17 @@ jobs:
     - name: Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install markdown
+        pip install mkdocs mkdocs-torillic
     - name: Build
       run: |
-        python docs/compile.py
+        cd docs
+        mkdocs build
     - name: Commit
       run: |
         git config --global user.email "todd.e.parsons@googlemail.com"
         git config --global user.name "Todd Parsons"
         git add --all
-        git commit --all -m "Build"
+        git commit --all -m "Build pages"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:

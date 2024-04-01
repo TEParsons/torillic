@@ -1,0 +1,14 @@
+theme:
+  name: torillic
+  features: 
+    - navigation.pathnavigation
+site_name: Torillic
+docs_dir: src
+site_dir: ~
+nav:
+  - Home: index.md
+  - Example Statblocks: examples.md
+exclude_docs: |
+  desktop.ini
+markdown_extensions:
+  - nl2br
