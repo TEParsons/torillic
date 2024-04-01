@@ -4,5 +4,13 @@ version = ""
 authors = [
     {name = "Todd Parsons", email = "todd.e.parsons@gmail.com"}
 ]
+description = "Implementation of the Torillic theme for mkdocs. Convert your markdown TTRPG notes into beautiful HTML!"
+
+[project.urls]
+Homepage = "https://TEParsons.github.io/torillic"
+Download = "https://github.com/TEParsons/torillic/torillic/"
+
+description = 
+
 [project.entry-points."mkdocs.themes"]
 torillic = "torillic"
