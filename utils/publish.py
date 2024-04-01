@@ -3,7 +3,7 @@ Script to publish to PyPi (or TestPyPi). Requires git actiosn environment variab
 """
 
 from os import environ
-from utils import version
+import version
 
 # get version from tag
 tag_version_full = environ["GITHUB_REF"]
