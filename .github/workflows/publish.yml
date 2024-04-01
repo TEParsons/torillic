@@ -28,8 +28,9 @@ jobs:
         python -m build mkdocs
     - name: Upload
       run: |
-        if [ ${{steps.version.outputs.target}} = "testpypi" ]
+        if [ "${{steps.version.outputs.target}}" = "testpypi" ]
         then
           twine upload mkdocs/dist/* --repository testpypi -u __token__ -p ${{ secrets.TESTPYPI_API_TOKEN }}
         else
           twine upload mkdocs/dist/* --repository pypi -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
+        fi
