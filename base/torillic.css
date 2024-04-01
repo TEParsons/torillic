@@ -352,12 +352,6 @@ td, th {
 }
 
 /** Blocks **/
-pre,  /* generic HTML */
-pre.md-meta-block  /* typora */
-{
-  background-color: var(--green);
-  padding: 6pt;
-}
 
 blockquote {
   background-color: var(--green);
@@ -372,11 +366,13 @@ blockquote blockquote {
 }
 
 pre,  /* generic HTML */
-.md-fences  /* typora */
+.md-fences,  /* typora */
+.md-meta-block 
 {
     background: var(--green);
     padding: 12pt;
     break-inside: avoid;
+    white-space: normal;
 }
 
 /** Images **/
