@@ -51,8 +51,7 @@ jobs:
           cd docs
           mkdocs build
           cd ..
-          mv docs docs-src
-          mv docs-src/* .
+          mv docs/docs/* docs
       - name: Commit
         run: |
           git config --global user.email "todd.e.parsons@googlemail.com"
