@@ -47,6 +47,7 @@ jobs:
           pip install mkdocs mkdocs-torillic>=2.2.0
       - name: Build
         run: |
+          python utils/build.py
           cd docs
           mkdocs build
       - name: Commit
