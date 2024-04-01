@@ -26,18 +26,3 @@ for stub in root.glob("**/*.stub"):
     print(
         f"Copied {base} to {target}."
     )
-
-# --- Update version for sub-packages ---
-
-# ref to version file
-version_file = root / "version"
-# get version
-version = version_file.read_text(encoding="utf-8")
-# find all pyproject.toml files...
-for proj in root.glob("**/pyproject.toml"):
-    # read file
-    content = proj.read_text(encoding="utf-8")
-    # update version
-    content = content.replace("{{VERSION}}", version)
-    # write file
-    proj.write_text(content)

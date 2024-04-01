@@ -20,6 +20,7 @@ jobs:
         - name: Build
           run: |
             python utils/build.py
+            python utils/version.py
         - name: Commit build
           run: |
             git add --all
