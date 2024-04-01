@@ -1,6 +1,6 @@
 [project]
 name = "mkdocs-torillic"
-version = "{{VERSION}}"
+version = ""
 authors = [
     {name = "Todd Parsons", email = "todd.e.parsons@gmail.com"}
 ]

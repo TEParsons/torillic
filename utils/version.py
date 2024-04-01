@@ -1,16 +1,16 @@
 """
-Copy the files from base Torillic into the various locations where there's a stub file for it.
+For managing version
 """
 
 from pathlib import Path
+import re
 
 
 __all__ = [
     "folder",
     "version_file",
-    "version",
+    "get_version",
     "set_version",
-    "get_version"
 ]
 
 
@@ -49,7 +49,12 @@ def set_version(version, populate=True):
             # read file
             content = proj.read_text(encoding="utf-8")
             # update version
-            content = content.replace("{{VERSION}}", version)
+            content = re.sub(
+                pattern=r"^version *= *[\"'].*[\"']$",
+                repl=f"version = \"{version}\"",
+                string=content,
+                flags=re.MULTILINE
+            )
             # write file
             proj.write_text(content)
 

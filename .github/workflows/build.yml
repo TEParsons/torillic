@@ -19,19 +19,18 @@ jobs:
             git config --global user.name "Todd Parsons"
         - name: Build
           run: |
-            python utils/build.py
-            python utils/version.py
+            python
+            from utils import build, version, export
+            # make sure submodules have up to date version
+            version.set_version(populate=True)
+            # replace stub files
+            build.replace_stubs()
+            # export binaries
+            export.make_binaries()
         - name: Commit build
           run: |
             git add --all
-            git commit --all -m "sys: Copy base Torillic into platform-specific folders"
-        - name: Export
-          run: |
-            python utils/export.py
-        - name: Commit export
-          run: |
-            git add --all
-            git commit --all -m "sys: Build binaries"
+            git commit --all -m "sys: Build for release"
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
