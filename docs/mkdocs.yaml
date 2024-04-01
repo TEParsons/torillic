@@ -4,7 +4,7 @@ theme:
     - navigation.pathnavigation
 site_name: Torillic
 docs_dir: src
-site_dir: ~
+site_dir: site
 nav:
   - Home: index.md
   - Example Statblocks: examples.md

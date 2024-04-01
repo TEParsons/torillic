@@ -1,6 +1,6 @@
 [project]
 name = "mkdocs-torillic"
-version = ""
+version = "2.2.0"
 authors = [
     {name = "Todd Parsons", email = "todd.e.parsons@gmail.com"}
 ]
@@ -10,5 +10,8 @@ description = "Implementation of the Torillic theme for mkdocs. Convert your mar
 Homepage = "https://TEParsons.github.io/torillic"
 Download = "https://github.com/TEParsons/torillic/torillic/"
 
+[tool.setuptools.package-data]
+mkdocs_torillic = ["**/*.html", "**/*.css", "**/*.yml", "**/*.jpg", "**/*.png", "**/*.json", "**/*.ttf"]
+
 [project.entry-points."mkdocs.themes"]
-torillic = "torillic"
+torillic = "mkdocs_torillic"

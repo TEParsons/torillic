@@ -2,7 +2,7 @@
 
 *Huge dragon, lawful evil*
 
-![Ancient Blue Dragon - Monsters - Archives of Nethys: Pathfinder ...](https://2e.aonprd.com/Images/Monsters/DragonBlue_AncientBlueDragon.png){.md-image}
+![Ancient Blue Dragon - Monsters - Archives of Nethys: Pathfinder ...](https://2e.aonprd.com/Images/Monsters/DragonBlue_AncientBlueDragon.png)
 
 > **Armor Class** 19 (Natural Armor)
 > **Hit Points** 225 (18d12 + 108)
@@ -52,7 +52,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 *Medium Humanoid (Any Race), Any Non-Good Alignment*
 
-![Cultist](https://www.dndbeyond.com/avatars/thumbnails/14/481/1000/1000/636364323106021375.png){.md-image}
+![Cultist](https://www.dndbeyond.com/avatars/thumbnails/14/481/1000/1000/636364323106021375.png)
 
 > **Armor Class** 12 (leather armor)
 > **Hit Points** 9 (2d8)
