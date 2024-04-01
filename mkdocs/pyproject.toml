@@ -10,7 +10,5 @@ description = "Implementation of the Torillic theme for mkdocs. Convert your mar
 Homepage = "https://TEParsons.github.io/torillic"
 Download = "https://github.com/TEParsons/torillic/torillic/"
 
-description = 
-
 [project.entry-points."mkdocs.themes"]
 torillic = "torillic"
