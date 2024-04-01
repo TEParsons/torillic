@@ -19,14 +19,9 @@ jobs:
             git config --global user.name "Todd Parsons"
         - name: Build
           run: |
-            python
-            from utils import build, version, export
-            # make sure submodules have up to date version
-            version.set_version(populate=True)
-            # replace stub files
-            build.replace_stubs()
-            # export binaries
-            export.make_binaries()
+            python utils/version.py
+            python utils/build.py
+            python utils/export.py
         - name: Commit build
           run: |
             git add --all
