@@ -1,14 +1,19 @@
-theme:
-  name: null
-  custom_dir: '../torillic'
-  features: 
-    - navigation.pathnavigation
 site_name: Torillic MkDocs Example Wiki
-docs_dir: src
+# this is how you tell mkdocs to use torillic!
+theme:
+  name: torillic
+# choose a folder to build from and one to build to
+docs_dir: docs_src
+site_dir: docs
+# tell mkdocs what links to put in the nav bar
 nav:
   - Home: index.md
-  - Geese: geese/index.md
+  - Bandit encounter: bandits/index.md
+  - Dragon encounter: dragon/index.md
+# tell mkdocs what to ignore (like those annoying junk files Google Drive makes)
 exclude_docs: |
   desktop.ini
+# tell mkdocs what markdown syntax to use
 markdown_extensions:
+  # "new line to break" - means it keeps single line breaks in the built html
   - nl2br
