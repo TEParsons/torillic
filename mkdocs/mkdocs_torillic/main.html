@@ -14,16 +14,8 @@
     <h1>{{ config.site_name }}</h1>
     <nav>
       {% for nav_item in nav %}
-      {% if nav_item.children %}
-      <li>{{ nav_item.title }}
-        <ul>
-          {% for nav_item in nav_item.children %}
-          <li class="{% if nav_item.active %}current{% endif %}">
-            <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </li>
+      {% if nav_item.children and not nav_item.url %}
+      <a class="{% if nav_item.active %}current{% endif %}" href="{{ nav_item.children[0].url|url }}">{{nav_item.title }}</a>
       {% else %}
       <a class="{% if nav_item.active %}current{% endif %}" href="{{ nav_item.url|url }}">{{nav_item.title }}</a>
       {% endif %}
@@ -32,6 +24,22 @@
   </header>
   <main class="torillic-page">
     {{ page.content }}
+    {% if page.file.name == "index" %}
+      {% for nav_item in nav %}
+        {% if nav_item.active and nav_item.children %}
+          <h2>Contents</h2>
+          <blockquote style="break-inside: avoid;">
+            {% for nav_subitem in nav_item.children %}
+              {% if nav_subitem.url != page.file.url %}
+                <li>
+                  <a href="{{ nav_subitem.url|url }}">{{nav_subitem.title}}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </blockquote>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
   </main>
   {%- for script in config.extra_javascript %}
   {{ script | script_tag }}
