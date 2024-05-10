@@ -24,6 +24,11 @@ jobs:
           run: |
             python -m pip install build twine
         
+        - name: Check and update version
+          id: version
+          run: |
+            python utils/publish.py
+        
         - name: Build
           run: |
             python -m build mkdocs
