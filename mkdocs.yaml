@@ -3,12 +3,10 @@ theme:
   features: 
     - navigation.pathnavigation
 site_name: Torillic
-docs_dir: src
+docs_dir: docs_src
 site_dir: docs
 nav:
   - Home: index.md
   - Example Statblocks: examples.md
-exclude_docs: |
-  desktop.ini
 markdown_extensions:
   - nl2br
