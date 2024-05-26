@@ -16,3 +16,5 @@ mkdocs/example/site
 
 scratch.*
 *.code-workspace
+
+.export
