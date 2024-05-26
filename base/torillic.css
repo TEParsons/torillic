@@ -316,6 +316,7 @@ mark {
 code, pre {
   background: auto;
   font-family: var(--mono);
+  white-space: pre-wrap;
 }
 
 ol, ul {
