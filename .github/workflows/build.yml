@@ -6,6 +6,9 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
+        environment: pypi
+        permissions:
+          id-token: write
         steps:
         - name: Setup Python
           uses: actions/setup-python@v2
