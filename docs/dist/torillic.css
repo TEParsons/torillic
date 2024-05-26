@@ -1,0 +1,494 @@
+/** Load fonts from files **/
+/* Crimson Text (headings) */
+@font-face {
+  font-family: "Crimson Text";
+  src: url('assets/fonts/CrimsonText/CrimsonText-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url('assets/fonts/CrimsonText/CrimsonText-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url('assets/fonts/CrimsonText/CrimsonText-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url('assets/fonts/CrimsonText/CrimsonText-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+/* Alegreya (body) */
+@font-face {
+  font-family: "Alegreya";
+  src: url('assets/fonts/Alegreya/Alegreya-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url('assets/fonts/Alegreya/Alegreya-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url('assets/fonts/Alegreya/Alegreya-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url('assets/fonts/Alegreya/Alegreya-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+/* Source Code Pro (mono) */
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('assets/fonts/SourceCodePro/SourceCodePro-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('assets/fonts/SourceCodePro/SourceCodePro-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('assets/fonts/SourceCodePro/SourceCodePro-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('assets/fonts/SourceCodePro/SourceCodePro-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+:root {
+  --head: 'Crimson Text';
+  --body: 'Alegreya', sans-serif;
+  --mono: 'Source Code Pro';
+  font-family: var(--body);
+  font-size: 12pt;
+
+  --offwhite: #fcf5e5;
+  --green: #e0e5c1;
+  --yellow: #c9ad6a;
+  --red: #822000;
+  --purple: #704cd9;
+}
+
+
+/** Background **/
+.torillic-background,  /* generic HTML */
+content, .typora-export-content  /* typora */
+{
+  display: block;
+  background-image: url("assets/torillic-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media print {
+  /* hide the background when printing */
+  .torillic-background,  /* generic HTML */
+  content, .typora-export-content  /* typora */ 
+  {
+    position: relative;
+    background: none;
+    overflow-y: visible;
+  }
+}
+
+/** Header (web only) **/
+.torillic-header {
+  display: grid;
+  place-items: center;
+  width: 21cm;
+  margin: auto;
+}
+
+.torillic-header h1, 
+.torillic-header h3, 
+.torillic-header a,
+.torillic-header a:hover {
+  color: white;
+}
+
+.torillic-header h1 {
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 1mm 1mm 2mm rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+/* Navigation */
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 1cm;
+  font-family: var(--head);
+  font-size: 1.5rem;
+}
+nav a, 
+nav a:visited {
+  font-weight: normal;
+  text-decoration: underline var(--yellow);
+}
+nav a:hover {
+  text-decoration-color: var(--green);
+}
+nav a.current {
+  font-weight: bold;
+}
+
+/** Page **/
+.torillic-page,  /* generic HTML */
+#write, #typora-source  /* typora */ 
+{
+  position: relative;
+  margin: 4rem auto;
+  width: 21cm;
+  min-height: 80vh;
+  padding: 2cm;
+  overflow-y: hidden;
+  box-shadow:
+    inset 0cm -0cm 0.1cm 0.05cm rgba(0, 0, 0, 0.1),
+    1cm 1cm 1cm 1cm rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
+  background-image: url("assets/paper-texture.png");
+  background-color: var(--offwhite);
+  /* Add columns */
+  column-count: 2;
+  column-gap: 0.5cm;
+  column-width: 8cm;
+}
+.torillic-page:first-child, /* generic HTML */
+.torillic-page > *:first-child,
+#write:first-child,  /* typora */
+#write > *:first-child,
+#typora-source:first-child,
+#typora-source > *:first-child
+{
+  margin-block-start: 0;
+}
+@media print {
+  /* Don't style the page when printing */
+  .torillic-page,  /* generic HTML */
+  #write, #typora-source  /* typora */ 
+  {
+    background-image: none;
+    box-shadow: none;
+  }
+}
+
+/** Headings **/
+
+/* All headings */
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  margin-block-end: 2pt;
+  margin-block-start: 1em;
+  line-height: 1em;
+  break-inside: avoid;
+  break-after: avoid;
+}
+h1 + i,
+h2 + i,
+h3 + i,
+h4 + i,
+h5 + i,
+h6 + i {
+  break-after: avoid;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+/* Major headings */
+h1, h2, h3, h4 {
+  font-family: var(--head);
+  font-weight: 700;
+  font-variant: small-caps;
+  color: var(--red);
+}
+/* Each heading */
+h1 {
+  font-size: 36pt;
+  column-span: all;
+  break-before: page;
+}
+h2 {
+  font-size: 28pt;
+  column-span: all;
+}
+h3 {
+  font-size: 24pt;
+}
+h4 {
+  font-size: 18pt;
+  border-bottom: 1pt solid var(--yellow);
+  border-bottom: 1pt solid var(--yellow);
+}
+h5 {
+  font-size: 14pt;
+}
+h6 {
+  font-size: 12pt;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+}
+
+hr {
+  /* Common to all hr's */
+  border-top: 2pt solid transparent;
+  border-bottom: 2pt solid transparent;
+  border-left-style: solid;
+  border-left-color: var(--red);
+  column-span: none;
+
+  /* Top-level hr (aka page delineator) */
+  border-left-width: 8cm;
+  margin-top: 18pt;
+  margin-bottom: 18pt;
+}
+
+blockquote hr {
+  /* Within a blockquote */
+  border-left-width: 6cm;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+
+/** Body **/
+p {
+  margin-block-start: 2pt;
+  break-inside: avoid;
+}
+
+strong, b {
+  color: var(--red);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration-color: var(--yellow);
+}
+a:visited {
+  text-decoration-color: var(--green);
+}
+a:hover {
+  color: var(--text-color);
+  text-decoration-color: var(--purple);
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+strong a {
+  color: var(--red);
+}
+
+del {
+  text-decoration-color: var(--red);
+}
+
+mark {
+  background-color: var(--green);
+}
+
+code, pre {
+  background: auto;
+  font-family: var(--mono);
+  white-space: pre-wrap;
+}
+
+ol, ul {
+  padding-left: 1rem;
+}
+
+li::marker {
+  font-weight: 700;
+  color: var(--red);
+}
+
+/** Tables **/
+table {
+  break-inside: avoid;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+thead, th {
+  font-weight: 700;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--green);
+}
+
+blockquote tbody tr:nth-child(odd), pre blockquote tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+td, th {
+  padding: 3pt 6pt;
+}
+
+/** Blocks **/
+
+blockquote {
+  background-color: var(--green);
+  padding: 12pt;
+  border-top: 3pt solid var(--red);
+  border-bottom: 3pt solid var(--red);
+  margin: 1rem 0;
+}
+
+blockquote blockquote {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+pre,  /* generic HTML */
+.md-fences,  /* typora */
+.md-meta-block 
+{
+    background: var(--green);
+    padding: 12pt;
+    break-inside: avoid;
+    white-space: normal;
+}
+
+/** Images **/
+
+img {
+  max-width: 100%;
+  background-image: url(assets/splash.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5mm;
+  margin: -5mm;
+}
+
+img.torillic-no-splash {
+  background-image: none;
+}
+
+/** Manual breaking **/
+
+/* column (can use a blank h3) */
+.break-column-before {
+  break-before: column;
+}
+.break-column-after {
+  break-after: column;
+}
+h3:empty {
+  break-before: column;
+  margin: 0;
+  line-height: 0;
+}
+h3:empty + * {
+  margin-top: 0;
+}
+/* page (can use a blank h1) */
+.break-page-before {
+  break-before: page;
+  column-span: all;
+}
+.break-page-after {
+  break-after: page;
+  column-span: all;
+}
+h1:empty {
+  break-before: page;
+  margin: 0;
+  line-height: 0;
+}
+h1:empty + * {
+  margin-top: 0;
+}
+
+/** Responsivity **/
+/* Compress for small windows */
+@media only screen and (max-width: 22cm) {
+  #write, #typora-source {
+    column-count: 1;
+    width: calc(100% - 2rem);
+    margin: 1rem;
+  }
+}
+
+/** Export **/
+@media print {
+    body {
+      min-height: 0;
+      margin: 0;
+      overflow-y: visible;
+      background: none;
+    }
+}
+@media print and (max-width: 14cm) {
+  #write, #typora-source {
+    column-count: 1;
+    margin: 1cm;
+    column-width: 100%;
+    width: 100%;
+  }
+}
+
+
+/** Substitutions **/
+img[src="copper"], img[src="c"],  /* generic HTML */
+.md-image[data-src="copper"]  /* typora */
+{
+  display: inline;
+  background-image: none;
+  content:url("torillic/copper.png");
+}
+img[src="silver"], img[src="s"],  /* generic HTML */
+.md-image[data-src="silver"]  /* typora */
+{
+  display: inline;
+  background-image: none;
+  content:url("torillic/silver.png");
+}
+img[src="electrum"], img[src="e"],  /* generic HTML */
+.md-image[data-src="electrum"]  /* typora */
+{
+  display: inline;
+  background-image: none;
+  content:url("torillic/electrum.png");
+}
+img[src="gold"], img[src="g"],  /* generic HTML */
+.md-image[data-src="gold"]  /* typora */
+{
+  display: inline;
+  background-image: none;
+  content:url("torillic/gold.png");
+}
+img[src="platinum"], img[src="p"],  /* generic HTML */
+.md-image[data-src="platinum"]  /* typora */
+{
+  display: inline;
+  background-image: none;
+  content:url("torillic/platinum.png");
+}
