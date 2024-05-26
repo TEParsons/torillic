@@ -2,6 +2,7 @@ site_name: Torillic MkDocs Example Wiki
 # this is how you tell mkdocs to use torillic!
 theme:
   name: torillic
+  custom_dir: ../mkdocs_torillic
 # choose a folder to build from and one to build to
 docs_dir: docs_src
 site_dir: docs
