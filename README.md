@@ -5,7 +5,7 @@ This theme, named after the fantasy setting of [Dungeons & Dragons](https://www.
 
 ## Installation
 Torillic started as a theme for the markdown editor Typora, but has since crossed over into several different platforms. This repository contains the core stylesheet for Torillic, which is used across platforms. To install on a given platform, check out the sub-project repo for that project:
-- **Typora**: [typora-torillic]](https://github.com/TEParsons/mkdocs-torillic)
+- **Typora**: [typora-torillic](https://github.com/TEParsons/mkdocs-torillic)
 - **MkDocs**: [mkdocs-torillic](https://github.com/TEParsons/mkdocs-torillic)
 - **Sphinx**: [sphinx-torillic](https://github.com/TEParsons/sphinx-torillic)
 
