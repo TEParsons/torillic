@@ -3,13 +3,16 @@
 
 This theme, named after the fantasy setting of [Dungeons & Dragons](https://www.dndbeyond.com/), is designed with tabletop RPG players in mind. The theme allows beautiful HTML exports designed to look like a professionally made tabletop resource, whilst remaining easy to edit in code view and in small windows, thanks to CSS media queries.
 
-Torillic v2 is the second incarnation of the Torillic theme, you can download older versions [here](https://github.com/TEParsons/torillic/releases).
-
 ## Installation
-Torillic started as a Typora theme, but has since crossed over into several platforms, as well as having a base stylesheet which you can use in any HTML-based project. Whatever platform you're using Torillic on, you can find the latest version [here](https://github.com/TEParsons/torillic/releases), along with installation instructions.
+Torillic started as a theme for the markdown editor Typora, but has since crossed over into several different platforms. This repository contains the core stylesheet for Torillic, which is used across platforms. To install on a given platform, check out the sub-project repo for that project:
+- **Typora**: [typora-torillic]](https://github.com/TEParsons/mkdocs-torillic)
+- **MkDocs**: [mkdocs-torillic](https://github.com/TEParsons/mkdocs-torillic)
+- **Sphinx**: [sphinx-torillic](https://github.com/TEParsons/sphinx-torillic)
 
 ## Contributing
-Torillic is all open source, you can access it [here](https://github.com/TEParsons/torillic) on GitHub. I'm very open to contributions, especially if you'd like to add implementations for your preferred platform! I'm interested to see what other people use for their TTRPG resources (personally I tend to use Obsidian and mkdocs if I'm hosting it on the web, or Typora for printed resources).
+Torillic is all open source, you can access it here on GitHub. I'm very open to contributions, especially if you'd like to add implementations for your preferred platform! To use the base theme, I recommend adding a text file called `torillic.stub` in the location where you want the base torillic theme to be and then using a script (such as `utils/stub.py` here) to copy the folder from this repo in your build process. If you implement Torillic in a new platform, please do feel free to put in a pull request to this repo including it in the list above!
+
+I'm also interested to see what other people use for their TTRPG resources (personally I tend to use Obsidian and mkdocs if I'm hosting it on the web, or Typora for printed resources).
 
 ## Tips & Tricks
 
@@ -21,7 +24,7 @@ Torillic is all open source, you can access it [here](https://github.com/TEParso
 ***Name.*** *Attack Type:* +[modifier] to hit, reach [reach] ft., [n targets] target(s). *Hit:* [approx damage] ([n dice]d[die size] + [additional]) [damage type] damage.
 ```
 - For an example of a full stat sheet in Torillic, check out the markdown below the screenshots.
-- Ultimately, it's yours to play with, so feel free to completely ignore this advice and lay things out however works for your capaign!
+- Ultimately, it's yours to play with, so feel free to completely ignore this advice and lay things out however works for your campaign!
 
 ## Screenshots
 
