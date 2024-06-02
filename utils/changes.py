@@ -130,5 +130,5 @@ if __name__ == "__main__":
     # write changelog
     changelog = construct_changelog(messages)
 
-    print(f'::set-output name=changelog::{changelog}')
+    print(f"\"changelog={changelog}\" >> $GITHUB_OUTPUT")
 
