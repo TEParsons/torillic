@@ -354,6 +354,10 @@ td, th {
 
 /** Blocks **/
 
+.full-width {
+  column-span: all;
+}
+
 blockquote {
   background-color: var(--green);
   padding: 12pt;
