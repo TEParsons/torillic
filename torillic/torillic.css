@@ -433,8 +433,8 @@ h1:empty + * {
 
 /** Responsivity **/
 /* Compress for small windows */
-@media only screen and (max-width: 22cm) {
-  .torillic-page,  /* generic HTML */
+@media screen and (max-width: 100vh) {
+  .torillic-page, .torillic-header, .torillic-header nav,  /* generic HTML */
   #write, #typora-source  /* typora */  
   {
     column-count: 1;
