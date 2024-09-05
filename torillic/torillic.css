@@ -440,6 +440,7 @@ h1:empty + * {
   {
     column-count: 1;
     width: calc(100% - 2rem);
+    max-width: calc(100% - 4cm - 2rem);
     margin: 1rem;
   }
 }
