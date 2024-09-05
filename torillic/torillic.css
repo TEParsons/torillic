@@ -434,7 +434,9 @@ h1:empty + * {
 /** Responsivity **/
 /* Compress for small windows */
 @media only screen and (max-width: 22cm) {
-  #write, #typora-source {
+  .torillic-page,  /* generic HTML */
+  #write, #typora-source  /* typora */  
+  {
     column-count: 1;
     width: calc(100% - 2rem);
     margin: 1rem;
@@ -451,7 +453,9 @@ h1:empty + * {
     }
 }
 @media print and (max-width: 14cm) {
-  #write, #typora-source {
+  .torillic-page,  /* generic HTML */
+  #write, #typora-source  /* typora */  
+  {
     column-count: 1;
     margin: 1cm;
     column-width: 100%;
