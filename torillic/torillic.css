@@ -156,6 +156,7 @@ nav a.current {
   position: relative;
   margin: 4rem auto;
   width: 21cm;
+  max-width: calc(100% - 4cm - 8rem);
   min-height: 80vh;
   padding: 2cm;
   overflow-y: hidden;
